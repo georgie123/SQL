@@ -18,17 +18,17 @@ CREATE TABLE customers (
 ) ENGINE=MyIsam AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 ;
 
 -- Insert in table customers
-INSERT INTO customers (firstname, lastname, email1, email2, email3, speciality) VALUES
-('Jean', 'Bon', 'jean.bon@example.fr', 'jean.bon2@example.fr', '', 'Charcutier'),
-('Marie', 'Glace', 'marie.glace@example.fr', 'marie.glace2@example.fr', 'marie.glace3@example.fr', 'Glacier'),
-('Alain', 'Proviste', 'alain.proviste@example.fr', '', '', 'Surprise Party Organizer'),
-('Anna', 'Conda', 'anna.conda@example.fr', 'anna.conda2@example.fr', '', 'Herpétologue'),
-('Jacques', 'Oule', 'jacques.oule@example.fr', '', 'jacques.oule3@example.fr', 'Sculpteur'),
-('Philippe', 'Harmonique', 'philippe.harmonique@example.fr', 'philippe.harmonique2@example.fr', 'philippe.harmonique3@example.fr', 'Chef d\'orchestre'),
-('Paul', 'Ochon', 'paul.ochon@example.fr', '', '', 'Agriculteur'),
-('Claire', 'Mentaire', 'claire.mentaire@example.fr', 'claire.mentaire2@example.fr', '', 'Dentiste'),
-('Anne', 'Tenne', 'anne.tenne@example.fr', '', 'anne.tenne3@example.fr', 'Électricienne'),
-('Ella', 'Boration', 'ella.boration@example.fr', 'ella.boration2@example.fr', '', 'Chimiste');
+INSERT INTO customers (date_submit, date_edit, firstname, lastname, email1, email2, email3, speciality) VALUES
+('2007-04-04 00:00:00', '2023-05-01 00:00:00', 'Jean', 'Bon', 'jean.bon@example.fr', 'jean.bon2@example.fr', '', 'Charcutier'),
+('2007-04-04 00:00:00', '2022-05-01 00:00:00', 'Marie', 'Glace', 'marie.glace@example.fr', 'marie.glace2@example.fr', 'marie.glace3@example.fr', 'Glacier'),
+('2007-04-04 00:00:00', '2023-05-01 00:00:00', 'Alain', 'Proviste', 'alain.proviste@example.fr', '', '', 'Surprise Party Organizer'),
+('2021-04-04 00:00:00', '2022-05-01 00:00:00', 'Anna', 'Conda', 'anna.conda@example.fr', 'anna.conda2@example.fr', '', 'Herpétologue'),
+('2007-04-04 00:00:00', '2023-05-01 00:00:00', 'Jacques', 'Oule', 'jacques.oule@example.fr', '', 'jacques.oule3@example.fr', 'Sculpteur'),
+('2022-04-04 00:00:00', '2023-05-01 00:00:00', 'Philippe', 'Harmonique', 'philippe.harmonique@example.fr', 'philippe.harmonique2@example.fr', 'philippe.harmonique3@example.fr', 'Chef d\'orchestre'),
+('2007-04-04 00:00:00', '2022-05-01 00:00:00', 'Paul', 'Ochon', 'paul.ochon@example.fr', '', '', 'Agriculteur'),
+('2007-04-04 00:00:00', '2023-05-01 00:00:00', 'Claire', 'Mentaire', 'claire.mentaire@example.fr', 'claire.mentaire2@example.fr', '', 'Dentiste'),
+('2007-04-04 00:00:00', '2023-05-01 00:00:00', 'Anne', 'Tenne', 'anne.tenne@example.fr', '', 'anne.tenne3@example.fr', 'Électricienne'),
+('2007-04-04 00:00:00', '2021-05-01 00:00:00', 'Ella', 'Boration', 'ella.boration@example.fr', 'ella.boration2@example.fr', '', 'Chimiste');
 
 
 -- Creation of table addresses
@@ -69,17 +69,17 @@ CREATE TABLE phones (
 ) ENGINE=MyIsam AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 ;
 
 -- Insert in table phones
-INSERT INTO phones (id_customer, phone1_type, phone1_code, phone1_number) VALUES
-(1, 'Mobile', '33', '06 12 34 56 78'),
-(2, 'Mobile', '33', '06 98 76 54 32'),
-(3, 'Mobile', '33', '06 11 22 33 44'),
-(4, 'Mobile', '33', '06 22 33 44 55'),
-(5, 'Mobile', '33', '06 33 44 55 66'),
-(6, 'Mobile', '33', '06 44 55 66 77'),
-(7, 'Mobile', '33', '06 55 66 77 88'),
-(8, 'Mobile', '33', '06 66 77 88 99'),
-(9, 'Mobile', '33', '06 77 88 99 00'),
-(10, 'Mobile', '33', '06 88 99 00 11') ;
+INSERT INTO phones (date_submit, date_edit, id_customer, phone1_type, phone1_code, phone1_number) VALUES
+('2007-04-04 00:00:00', '2023-05-01 00:00:00', 1, 'Mobile', '33', '06 12 34 56 78'),
+('2007-04-04 00:00:00', '2023-05-01 00:00:00', 2, 'Mobile', '33', '06 98 76 54 32'),
+('2022-04-04 00:00:00', '2023-05-01 00:00:00', 3, 'Mobile', '33', '06 11 22 33 44'),
+('2007-04-04 00:00:00', '2023-05-01 00:00:00', 4, 'Mobile', '33', '06 22 33 44 55'),
+('2022-04-04 00:00:00', '2023-05-01 00:00:00', 5, 'Mobile', '33', '06 33 44 55 66'),
+('2007-04-04 00:00:00', '2023-05-01 00:00:00', 6, 'Mobile', '33', '06 44 55 66 77'),
+('2007-04-04 00:00:00', '2023-05-01 00:00:00', 7, 'Mobile', '33', '06 55 66 77 88'),
+('2007-04-04 00:00:00', '2022-05-01 00:00:00', 8, 'Mobile', '33', '06 66 77 88 99'),
+('2007-04-04 00:00:00', '2023-05-01 00:00:00', 9, 'Mobile', '33', '06 77 88 99 00'),
+('2007-04-04 00:00:00', '2021-05-01 00:00:00', 10, 'Mobile', '33', '06 88 99 00 11') ;
 
 
 -- Creation of table commandes
@@ -99,14 +99,14 @@ CREATE TABLE commandes (
 
 
 -- Insert in table commandes
-INSERT INTO commandes (id_customer, commande_firstname, commande_lastname, commande_email1, commande_speciality, commande_country, amount) VALUES
-(1, 'Louis', 'Vuitton', 'louis.vuitton@example.fr', 'Designer', 'France', 5000),
-(2, 'Sophie', 'Marceau', 'sophie.marceau@example.fr', 'Actrice', 'France', 3000),
-(3, 'Georges', 'Brassens', 'georges.brassens@example.fr', 'Chanteur', 'France', 4500),
-(4, 'Camille', 'Coton', 'camille.coton@example.fr', 'Textiliste', 'France', 2000),
-(5, 'Henri', 'Potter', 'henri.potter@example.fr', 'Magicien', 'Royaume-Uni', 3500),
-(6, 'Isabelle', 'Huppert', 'isabelle.huppert@example.fr', 'Réalisatrice', 'France', 4000),
-(7, 'Vincent', 'Van Gogh', 'vincent.vangogh@example.fr', 'Peintre', 'Pays-Bas', 5500),
-(8, 'Marie', 'Curie', 'marie.curie@example.fr', 'Scientifique', 'Pologne', 6000),
-(9, 'Leonardo', 'Da Vinci', 'leonardo.davinci@example.fr', 'Inventeur', 'Italie', 7000),
-(9, 'Charles', 'Darwin', 'charles.darwin@example.fr', 'Biologiste', 'Royaume-Uni', 2500) ;
+INSERT INTO commandes (date_submit, date_edit, id_customer, commande_firstname, commande_lastname, commande_email1, commande_speciality, commande_country, amount) VALUES
+('2007-04-04 00:00:00', '2023-05-01 00:00:00', 1, 'Louis', 'Vuitton', 'louis.vuitton@example.fr', 'Designer', 'France', 5000),
+('2021-04-04 00:00:00', '2023-05-01 00:00:00', 2, 'Sophie', 'Marceau', 'sophie.marceau@example.fr', 'Actrice', 'France', 3000),
+('2007-04-04 00:00:00', '2021-05-01 00:00:00', 3, 'Georges', 'Brassens', 'georges.brassens@example.fr', 'Chanteur', 'France', 4500),
+('2021-04-04 00:00:00', '2023-05-01 00:00:00', 4, 'Camille', 'Coton', 'camille.coton@example.fr', 'Textiliste', 'France', 2000),
+('2007-04-04 00:00:00', '2024-05-01 00:00:00', 5, 'Henri', 'Potter', 'henri.potter@example.fr', 'Magicien', 'Royaume-Uni', 3500),
+('2007-04-04 00:00:00', '2023-05-01 00:00:00', 6, 'Isabelle', 'Huppert', 'isabelle.huppert@example.fr', 'Réalisatrice', 'France', 4000),
+('2007-04-04 00:00:00', '2021-05-01 00:00:00', 7, 'Vincent', 'Van Gogh', 'vincent.vangogh@example.fr', 'Peintre', 'Pays-Bas', 5500),
+('2021-04-04 00:00:00', '2023-05-01 00:00:00', 8, 'Marie', 'Curie', 'marie.curie@example.fr', 'Scientifique', 'Pologne', 6000),
+('2007-04-04 00:00:00', '2023-05-01 00:00:00', 9, 'Leonardo', 'Da Vinci', 'leonardo.davinci@example.fr', 'Inventeur', 'Italie', 7000),
+('2022-04-04 00:00:00', '2023-05-01 00:00:00', 9, 'Charles', 'Darwin', 'charles.darwin@example.fr', 'Biologiste', 'Royaume-Uni', 2500) ;
