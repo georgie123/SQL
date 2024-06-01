@@ -1,6 +1,6 @@
 
 -- Postgres
-USE systeme_b ;
+-- In a DB named "systeme_b" ;
 
 DROP TABLE IF EXISTS prospects ;
 

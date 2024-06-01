@@ -12,21 +12,24 @@ CREATE TABLE customers (
     firstname VARCHAR(50) NOT NULL,
     lastname VARCHAR(50) NOT NULL,
     email1 VARCHAR(150) NOT NULL,
+    email2 VARCHAR(150),
+    email3 VARCHAR(150),
     speciality VARCHAR(50) NOT NULL
 ) ENGINE=MyIsam AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 ;
 
 -- Insert in table customers
-INSERT INTO customers (firstname, lastname, email1, speciality) VALUES
-('Jean', 'Bon', 'jean.bon@example.fr', 'Charcutier'),
-('Marie', 'Glace', 'marie.glace@example.fr', 'Glacier'),
-('Alain', 'Proviste', 'alain.proviste@example.fr', 'Surprise Party Organizer'),
-('Anna', 'Conda', 'anna.conda@example.fr', 'Herpétologue'),
-('Jacques', 'Oule', 'jacques.oule@example.fr', 'Sculpteur'),
-('Philippe', 'Harmonique', 'philippe.harmonique@example.fr', 'Chef d\'orchestre'),
-('Paul', 'Ochon', 'paul.ochon@example.fr', 'Agriculteur'),
-('Claire', 'Mentaire', 'claire.mentaire@example.fr', 'Dentiste'),
-('Anne', 'Tenne', 'anne.tenne@example.fr', 'Électricienne'),
-('Ella', 'Boration', 'ella.boration@example.fr', 'Chimiste') ;
+INSERT INTO customers (firstname, lastname, email1, email2, email3, speciality) VALUES
+('Jean', 'Bon', 'jean.bon@example.fr', 'jean.bon2@example.fr', '', 'Charcutier'),
+('Marie', 'Glace', 'marie.glace@example.fr', 'marie.glace2@example.fr', 'marie.glace3@example.fr', 'Glacier'),
+('Alain', 'Proviste', 'alain.proviste@example.fr', '', '', 'Surprise Party Organizer'),
+('Anna', 'Conda', 'anna.conda@example.fr', 'anna.conda2@example.fr', '', 'Herpétologue'),
+('Jacques', 'Oule', 'jacques.oule@example.fr', '', 'jacques.oule3@example.fr', 'Sculpteur'),
+('Philippe', 'Harmonique', 'philippe.harmonique@example.fr', 'philippe.harmonique2@example.fr', 'philippe.harmonique3@example.fr', 'Chef d\'orchestre'),
+('Paul', 'Ochon', 'paul.ochon@example.fr', '', '', 'Agriculteur'),
+('Claire', 'Mentaire', 'claire.mentaire@example.fr', 'claire.mentaire2@example.fr', '', 'Dentiste'),
+('Anne', 'Tenne', 'anne.tenne@example.fr', '', 'anne.tenne3@example.fr', 'Électricienne'),
+('Ella', 'Boration', 'ella.boration@example.fr', 'ella.boration2@example.fr', '', 'Chimiste');
+
 
 -- Creation of table addresses
 DROP TABLE IF EXISTS addresses ;
