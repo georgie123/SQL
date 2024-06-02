@@ -1,5 +1,4 @@
 
-
 -- MYSQL/MariaDB
 USE systeme_a ;
 
@@ -63,9 +62,15 @@ CREATE TABLE phones (
     id_customer INT NOT NULL,
     date_submit datetime,
     date_edit datetime DEFAULT CURRENT_TIMESTAMP,
-    phone1_type VARCHAR(20) NOT NULL,
-    phone1_code VARCHAR(20) NOT NULL,
-    phone1_number VARCHAR(30) NOT NULL
+    phone1_type VARCHAR(20),
+    phone1_code VARCHAR(20),
+    phone1_number VARCHAR(30),
+    phone2_type VARCHAR(20),
+    phone2_code VARCHAR(20),
+    phone2_number VARCHAR(30),
+    phone3_type VARCHAR(20),
+    phone3_code VARCHAR(20),
+    phone3_number VARCHAR(30)
 ) ENGINE=MyIsam AUTO_INCREMENT=0 DEFAULT CHARSET=utf8mb4 ;
 
 -- Insert in table phones
